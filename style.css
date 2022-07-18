@@ -1,0 +1,152 @@
+/* for all lists */
+ul {
+  list-style: none;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: pink;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.site-logo {
+  width: 70px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  padding-right: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.items {
+  display: flex;
+  padding: 0 15%;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 3rem auto;
+  flex-direction: column;
+}
+
+.items li {
+  border: 1px dashed black;
+  border-radius: 30px;
+  padding: 0.5rem 0.5rem 2.5rem 0.5rem;
+  text-align: center;
+  width: 200px;
+}
+
+.items li img {
+  width: 100%;
+}
+
+.items li h3 {
+  color: red;
+}
+
+.description {
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+}
+
+.price {
+  font-size: 35px;
+  color: red;
+}
+
+.main-img {
+  display: flex;
+  height: 50%;
+  position: relative;
+  background-image: url('./images/banner.jpg');
+  justify-content: center;
+  margin: auto 0;
+}
+
+.main-img h3 {
+  position: absolute;
+  top: 10%;
+  text-align: center;
+}
+
+button {
+  padding: 12px 15px;
+  border-radius: 50px;
+  background-color: green;
+  color: white;
+  border: 1px solid green;
+  width: 100px;
+}
+
+button:hover {
+  background-color: white;
+  color: green;
+  border: 1px solid green;
+  transition: all 0.4s;
+}
+
+footer {
+  background-color: chocolate;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer img {
+  width: 100px;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .catalog-container {
+    text-align: center;
+  }
+
+  .items {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 40%;
+    padding: 0;
+    margin-right: 10px;
+  }
+
+  .items li {
+    width: 100%;
+    padding: 8% 0 15% 0;
+  }
+
+  footer ul {
+    margin: 0;
+    padding: 1rem 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .items {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 20px;
+  }
+
+  .items li {
+    width: 100%;
+    padding: 7% 0 15% 0;
+  }
+
+  footer ul {
+    margin: 0;
+    padding: 1rem 0;
+  }
+}
