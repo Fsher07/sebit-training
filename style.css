@@ -34,7 +34,6 @@ a {
   justify-content: center;
   gap: 2.5rem;
   margin: 3rem auto;
-  flex-direction: column;
 }
 
 .items li {
