@@ -105,7 +105,7 @@ footer img {
   width: 100px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) and (min-width: 600px) {
 
   .catalog-container {
     text-align: center;
